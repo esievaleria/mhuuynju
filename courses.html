@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Courses | Break Through Tech Academy</title>
+    <link rel="stylesheet" href="coursesstyle.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation Bar (same as index.html) -->
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>Break Through <span>Tech Academy</span></h1>
+                <div class="search-container">
+                    <form class="search-form" id="searchForm">
+                        <input type="text" 
+                               class="search-input" 
+                               id="searchInput" 
+                               placeholder="Search courses..." 
+                               aria-label="Search courses">
+                        <button type="submit" class="search-button">
+                            <i class="fas fa-search"></i>
+                        </button>
+                    </form>
+                </div>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="courses.html" class="active">Courses</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                <div class="mobile-menu-btn">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Courses Page Hero -->
+    <section class="page-hero">
+        <div class="container">
+            <h2>Our Course Catalog</h2>
+            <p>Browse all available programs to find the perfect fit for your tech career goals</p>
+        </div>
+    </section>
+
+    <!-- Main Courses Section -->
+    <section class="all-courses">
+        <div class="container">
+            <div class="course-filters">
+                <button class="filter-btn active" data-filter="all">All Courses</button>
+                <button class="filter-btn" data-filter="beginner">Beginner</button>
+                <button class="filter-btn" data-filter="intermediate">Intermediate</button>
+                <button class="filter-btn" data-filter="advanced">Advanced</button>
+            </div>
+            
+            <div class="courses-container">
+                <!-- Course 1 -->
+                <div class="course-card" data-level="beginner">
+                    <div class="course-img">
+                        <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Full Stack Development">
+                    </div>
+                    <div class="course-details">
+                        <span class="course-level level-beginner">Beginner</span>
+                        <h3>Full Stack Web Development</h3>
+                        <p class="course-description">Learn to build complete web applications from front-end to back-end with modern technologies including HTML/CSS, JavaScript, React, Node.js, and MongoDB.</p>
+                        <div class="course-meta">
+                            <span><i class="far fa-clock"></i> 12 Weeks</span>
+                            <span><i class="fas fa-laptop-code"></i> 80 Hours</span>
+                            <span><i class="fas fa-certificate"></i> Certificate</span>
+                        </div>
+                        <div class="course-actions">
+                            <a href="#" class="btn enroll-btn">Enroll Now</a>
+                            <a href="#" class="btn-outline">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Course 2 -->
+                <div class="course-card" data-level="intermediate">
+                    <div class="course-img">
+                        <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Data Science">
+                    </div>
+                    <div class="course-details">
+                        <span class="course-level level-intermediate">Intermediate</span>
+                        <h3>Data Science Fundamentals</h3>
+                        <p class="course-description">Master essential data science skills including Python programming, data analysis, visualization, and machine learning with real-world datasets.</p>
+                        <div class="course-meta">
+                            <span><i class="far fa-clock"></i> 10 Weeks</span>
+                            <span><i class="fas fa-laptop-code"></i> 60 Hours</span>
+                            <span><i class="fas fa-certificate"></i> Certificate</span>
+                        </div>
+                        <div class="course-actions">
+                            <a href="#" class="btn enroll-btn">Enroll Now</a>
+                            <a href="#" class="btn-outline">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Course 3 -->
+                <div class="course-card" data-level="beginner">
+                    <div class="course-img">
+                        <img src="https://images.unsplash.com/photo-1541462608143-67571c6738dd?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="UX/UI Design">
+                    </div>
+                    <div class="course-details">
+                        <span class="course-level level-beginner">Beginner</span>
+                        <h3>UX/UI Design</h3>
+                        <p class="course-description">Learn user-centered design principles, wireframing, prototyping, and usability testing to create engaging digital experiences.</p>
+                        <div class="course-meta">
+                            <span><i class="far fa-clock"></i> 8 Weeks</span>
+                            <span><i class="fas fa-laptop-code"></i> 50 Hours</span>
+                            <span><i class="fas fa-certificate"></i> Certificate</span>
+                        </div>
+                        <div class="course-actions">
+                            <a href="#" class="btn enroll-btn">Enroll Now</a>
+                            <a href="#" class="btn-outline">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Course 4 -->
+                <div class="course-card" data-level="advanced">
+                    <div class="course-img">
+                        <img src="https://images.unsplash.com/photo-1563986768609-322da13575f3?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Cybersecurity">
+                    </div>
+                    <div class="course-details">
+                        <span class="course-level level-advanced">Advanced</span>
+                        <h3>Cybersecurity Essentials</h3>
+                        <p class="course-description">Learn to protect systems and networks from digital attacks, including ethical hacking, penetration testing, and security best practices.</p>
+                        <div class="course-meta">
+                            <span><i class="far fa-clock"></i> 14 Weeks</span>
+                            <span><i class="fas fa-laptop-code"></i> 90 Hours</span>
+                            <span><i class="fas fa-certificate"></i> Certificate</span>
+                        </div>
+                        <div class="course-actions">
+                            <a href="#" class="btn enroll-btn">Enroll Now</a>
+                            <a href="#" class="btn-outline">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Course 5 -->
+                <div class="course-card" data-level="intermediate">
+                    <div class="course-img">
+                        <img src="https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Mobile Development">
+                    </div>
+                    <div class="course-details">
+                        <span class="course-level level-intermediate">Intermediate</span>
+                        <h3>Mobile App Development</h3>
+                        <p class="course-description">Build cross-platform mobile applications using React Native and Flutter, with focus on performance and user experience.</p>
+                        <div class="course-meta">
+                            <span><i class="far fa-clock"></i> 10 Weeks</span>
+                            <span><i class="fas fa-laptop-code"></i> 70 Hours</span>
+                            <span><i class="fas fa-certificate"></i> Certificate</span>
+                        </div>
+                        <div class="course-actions">
+                            <a href="#" class="btn enroll-btn">Enroll Now</a>
+                            <a href="#" class="btn-outline">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Course 6 -->
+                <div class="course-card" data-level="advanced">
+                    <div class="course-img">
+                        <img src="https://images.unsplash.com/photo-1544197150-b99a580bb7a8?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Cloud Computing">
+                    </div>
+                    <div class="course-details">
+                        <span class="course-level level-advanced">Advanced</span>
+                        <h3>Cloud Computing with AWS</h3>
+                        <p class="course-description">Master Amazon Web Services to deploy scalable cloud applications, manage infrastructure, and implement cloud security.</p>
+                        <div class="course-meta">
+                            <span><i class="far fa-clock"></i> 12 Weeks</span>
+                            <span><i class="fas fa-laptop-code"></i> 80 Hours</span>
+                            <span><i class="fas fa-certificate"></i> Certificate</span>
+                        </div>
+                        <div class="course-actions">
+                            <a href="#" class="btn enroll-btn">Enroll Now</a>
+                            <a href="#" class="btn-outline">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="cta-section">
+        <div class="container">
+            <h3>Ready to start your tech journey?</h3>
+            <p>Our admissions team is here to help you choose the right program.</p>
+            <a href="contact.html" class="btn">Contact Admissions</a>
+        </div>
+    </section>
+
+    <!-- Footer (same as index.html) -->
+    <footer>
+        <!-- Footer content from previous example -->
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
